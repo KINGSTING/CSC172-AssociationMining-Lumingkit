@@ -1,5 +1,5 @@
 # CyberSentience: Automating Threat Perception using Association Rule Mining
-**CSC173 Intelligent Systems Final Project**  
+**CSC172 Data Mining and Analysis Final Project**  
 *Mindanao State University - Iligan Institute of Technology*  
 **Student:** Jemar John J Lumingkit, 2022-1991
 **Semester:** AY 2025-2026 Sem 1  
@@ -46,14 +46,14 @@ Network security analysts are overwhelmed by the sheer volume of logs generated 
 
 ### Architecture
 The pipeline consists of:
-    1. **Ingestion & Cleaning** (Pandas)
-    2. **Discretization** (Custom Binning Logic)
-    3. **Frequent Itemset Mining** (Apriori)
-    4. **Rule Generation** (Association Rules)
-    5. **Attack Filter** (Extracting Antacedent -> Attack rules)
+1. **Ingestion & Cleaning** (Pandas)
+2. **Discretization** (Custom Binning Logic)
+3. **Frequent Itemset Mining** (Apriori)
+4. **Rule Generation** (Association Rules)
+5. **Attack Filter** (Extracting Antacedent -> Attack rules)
 
 ### Mining Code Snippet
-*notebooks/03_Mining_Apriori.ipynb excerpt*
+> *notebooks/03_Mining_Apriori.ipynb excerpt*
 ```python
 from mlxtend.frequent_patterns import apriori, association_rules
 
@@ -119,16 +119,20 @@ Run Notebooks: Open notebooks/03_Mining_Apriori.ipynb
 ```
 
 **requirements.txt:**
+```python
 pandas
 numpy
 matplotlib
 seaborn
 mlxtend
 notebook
+```
 
 ## References
 [1] Dhanalakshmi, B., & Usha, M. (2022). "Association Rule Mining Frequent-Pattern-Based Intrusion Detection in Network." Computer Systems Science and Engineering, 44(2), 1135–1149.
+
 [2] Samy, H. J., El-Aziz, A. A., & El-Rifaie, A. M. (2021). "Enhancing Network Intrusion Detection Model Using Machine Learning Algorithms." Computers, Materials & Continua, 67(1), 979–996.
+
 [3] Al-Omari, M., Rawashdeh, M., Qutaishat, F., & Alshira’h, M. (2022). "A Study of Network Intrusion Detection Systems Using Artificial Intelligence/Machine Learning." Applied Sciences, 12(22), 11752.
 
 ## GitHub Pages
