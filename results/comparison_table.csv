@@ -1,0 +1,4 @@
+Min Support,Min Confidence,Itemsets Found,Total Rules,Attack Rules
+0.01,0.5,1658,16608,5355
+0.05,0.6,502,4515,1531
+0.1,0.7,355,2406,793
