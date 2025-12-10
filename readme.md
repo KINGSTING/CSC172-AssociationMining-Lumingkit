@@ -50,7 +50,7 @@ The pipeline consists of:
 2. **Discretization** (Custom Binning Logic)
 3. **Frequent Itemset Mining** (Apriori)
 4. **Rule Generation** (Association Rules)
-5. **Attack Filter** (Extracting Antacedent -> Attack rules)
+5. **Attack Filter** (Extracting Antacedent $\rightarrow$ Attack rules)
 
 ### Mining Code Snippet
 > *notebooks/03_Mining_Apriori.ipynb excerpt*
@@ -71,10 +71,12 @@ attack_rules = rules[rules['consequents'].apply(lambda x: 'Attack' in str(x))]
 To determine the optimal parameters for the detection engine, we conducted a sensitivity analysis by varying the Minimum Support.
 
 ### Metrics Comparison
-| Setting Mode | Min Support | Min Confidence |	Total Rules | Attack Rules |
-| Loose	| 0.01 | (1%) |	0.5 | (50%) |	16,608 | 5,355 |
-| Balanced | 0.05 | (5%) | 0.6 | (60%) |	4,515	| 1,531 |
-| Strict |	0.10 | (10%) | 0.7 | (70%)	| 2,406	| 793 |
+
+| Setting Mode | Min Support | Min Confidence | Total Rules | Attack Rules |
+| :--- | :--- | :--- | :--- | :--- |
+| **Loose** | 0.01 (1%) | 0.5 (50%) | 16,608 | 5,355 |
+| **Balanced** | 0.05 (5%) | 0.6 (60%) | 4,515 | 1,531 |
+| **Strict** | 0.10 (10%) | 0.7 (70%) | 2,406 | 793 |
 
 ### Interpretation
 - **Loose (0.01):** Resulted in rule explosion. While it caught rare attacks, the volume of rules (5,355) is too high for practical manual verification.
