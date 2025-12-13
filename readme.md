@@ -89,10 +89,8 @@ To determine the optimal parameters for the detection engine, we conducted a sen
 *Figure 2: Support vs. Confidence. The color gradient indicates Lift; rules with lower support often possess the highest Lift, indicating strong causal links.*
 
 
-
 ### Demo
-![Detection Demo](demo/detection.gif)
-[Video: [CSC173_YourLastName_Final.mp4](demo/CSC173_YourLastName_Final.mp4)] [web:41]
+![CSC173_YourLastName_Final.mp4](demo\CSC172-Lumingkit_Final.mp4)
 
 ## Discussion
 - **Strengths:** The system produces human-readable signatures. Unlike a neural network, a security analyst can look at a rule (IF Flag=S0 AND Service=Private THEN Attack=Neptune) and understand exactly what to block at the firewall.
